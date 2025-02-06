@@ -1,0 +1,18 @@
+/vis/open OGL
+/vis/viewer/set/viewpointVector 1 0.5 0.5
+/vis/drawVolume
+/vis/viewer/set/autoRefresh true
+
+/vis/scene/add/trajectories smooth
+/vis/scene/add/trajectories rich 5
+/vis/scene/add/hits
+/vis/scene/add/scale 10 cm
+/vis/scene/add/axes
+/tracking/storeTrajectory 1
+/vis/scene/add/eventID
+/vis/scene/endOfEventAction accumulate
+
+# Fix: Use DrawByParticleID instead of DrawByAttribute
+/vis/modeling/trajectories/create/drawByParticleID
+#/vis/modeling/trajectories/drawByParticleID-0/setLineStyle solid
+#/vis/modeling/trajectories/drawByParticleID-0/setLineWidth 2
