@@ -1,1 +1,1 @@
-# BNCT with geant4
+# BNCT geant4
