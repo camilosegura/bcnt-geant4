@@ -16,6 +16,7 @@
 #include "G4VUserPhysicsList.hh"
 #include "G4ThreeVector.hh"
 #include "G4Isotope.hh"
+#include "G4SDManager.hh"
 
 #include "SensitiveDetector.hh"
 

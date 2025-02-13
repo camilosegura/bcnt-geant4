@@ -77,4 +77,6 @@ void DetectorConstruction::ConstructSDandField(){
     
     // Asociar el detector sensible al tunor
     logicTumor->SetSensitiveDetector(sensitiveDetector);
+
+    G4SDManager::GetSDMpointer()->AddNewDetector(sensitiveDetector);
 }
